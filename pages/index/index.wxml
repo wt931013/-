@@ -25,3 +25,5 @@
       <button size='mini' slot="slot2">我是插入的按钮</button>
       <slider slot="slot1"></slider>
 </my-mslot>
+
+<view>知识点2</view>
