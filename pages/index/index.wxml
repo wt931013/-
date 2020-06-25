@@ -1,0 +1,27 @@
+<!-- 在json文件中注册组件 -->
+<head titles='{{["主页","分类","我的"]}}'
+      bind:itemclick="hTabClick" />
+
+<!--二：直接选中组件修改数据/调用方法 -->
+<button size="mini" bindtap="handleAdd">修改组件内的数据</button>
+<mysel id="sel-id" />
+
+<!-- 三：插槽 这里标签写错了插槽：slot-->
+<!-- 3.1单个插槽的使用 -->
+<my-solt>
+      <button size="mini">我是插入的按钮</button>
+</my-solt>
+<my-solt>
+      <text>哈哈哈哈</text>
+</my-solt>
+<my-solt>
+      <image src="https://ss1.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1828747119,4125727554&fm=26&gp=0.jpg" />
+</my-solt>
+<!-- 3.2多个插槽的使用 -->
+<!-- 注意事项：
+      1，给每一个插槽起一个名字：name属性
+      2，必须在Component对象中添加一个选项：options->multipleSlots:true -->
+<my-mslot>
+      <button size='mini' slot="slot2">我是插入的按钮</button>
+      <slider slot="slot1"></slider>
+</my-mslot>

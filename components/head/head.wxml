@@ -1,0 +1,16 @@
+<view class="h-control">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+    <view class="h-item {{currentIndex==index? 'active':''}}"
+          bindtap="itemClick"
+          data-index='{{index}}'>
+      <text>{{item}}</text>
+    </view>
+  </block>
+</view>
+<!-- 组件编写基本流程
+    1，编写组件基本内容
+    2，在pages中注册组件
+    3，编写组件的基本结构和样式
+    4，从页面传值给组件
+    5，编写组件的基本方法
+    6，编写从组件传给页面值的方法 -->

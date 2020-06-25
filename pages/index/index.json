@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "head":"/components/head/head",
+    "mysel":"/components/my-sel/mysel",
+    "my-solt":"/components/my-solt/my-solt",
+    "my-mslot":"/components/my-mslot/my-mslot"
+  }
+}
